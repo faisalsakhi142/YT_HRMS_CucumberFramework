@@ -16,7 +16,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @CucumberOptions (
 
-		features = "src/test/resources/features/", //specify which feature file to run
+		features = "src/test/resources/features/Add_Membership.feature", //specify which feature file to run
 
 					//in our case we do say to run all features inside features package
 
@@ -32,7 +32,7 @@ import io.cucumber.junit.CucumberOptions;
 
 		,strict=true
 
-		,tags= "@Reporting"
+		,tags= "@smoke"
 
 		,plugin= {
 

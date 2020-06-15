@@ -5,8 +5,10 @@ runner\SmokeRunner.class
 testbase\PageInitializer.class
 pages\LoginPageElements.class
 testbase\BaseClass.class
+steps\Add_Membership.class
 elements\EmployeeMultipleDependentsElements.class
 com\hrms\utils\CommonMethods.class
 com\hrms\utils\Constants.class
+elements\Add_EmployeeElements.class
 steps\Hooks.class
 com\hrms\utils\ExcelUtility.class

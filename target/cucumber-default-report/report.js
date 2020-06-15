@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Add_employee\u0027s_multiple_dependents.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Add_Membership.feature");
 formatter.feature({
-  "name": "Employee Multiple Dependents",
+  "name": "Add Membership",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@Reporting"
+      "name": "@smoke"
     },
     {
       "name": "@mvn"
@@ -13,12 +13,12 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "As an admin I should be able to add employee multiple dependents",
+  "name": "add  memberships to any employee",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Reporting"
+      "name": "@smoke"
     },
     {
       "name": "@mvn"
@@ -69,36 +69,76 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on dependents and click on Add",
+  "name": "click on Memberships and click on Add",
   "keyword": "And "
 });
 formatter.match({
-  "location": "steps.EmployeeMultipleDependents.click_on_dependents_and_click_on_Add()"
+  "location": "steps.Add_Membership.click_on_Memberships_and_click_on_Add()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I enter \"Rohani\", Relationship and Date Of birth \"1986-Feb-13\"",
+  "name": "select Java User in Membership",
   "keyword": "When "
 });
 formatter.match({
-  "location": "steps.EmployeeMultipleDependents.i_enter_Relationship_and_Date_Of_birth(java.lang.String,java.lang.String)"
+  "location": "steps.Add_Membership.select_Java_User_in_Membership()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "i click on save",
-  "keyword": "Then "
+  "name": "select Company in Subscription Paid By and enter \"2000\" as Subscription Amount",
+  "keyword": "And "
 });
 formatter.match({
-  "location": "steps.EmployeeMultipleDependents.i_click_on_save()"
+  "location": "steps.Add_Membership.select_Company_in_Subscription_Paid_By_and_enter_as_Subscription_Amount(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png", "As an admin I should be able to add employee multiple dependents");
+formatter.step({
+  "name": "select United States Dollar as Currency",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "steps.Add_Membership.select_United_States_Dollar_as_Currency()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enter Subscription Commence Date \"2020-Jan-01\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "steps.Add_Membership.enter_Subscription_Commence_Date(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "enter Subscription Renewal Date \"2020-May-01\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "steps.Add_Membership.enter_Subscription_Renewal_Date(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "click on save button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "steps.Add_Membership.click_on_save_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded0.png", "add  memberships to any employee");
 formatter.after({
   "status": "passed"
 });
